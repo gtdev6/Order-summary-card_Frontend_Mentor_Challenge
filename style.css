@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  position: relative;
+  background-color: #e0e8ff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-image {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.order-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 90%;
+  height: 80%;
+  min-width: 338px;
+  min-height: 560px;
+  /* border: 2px solid black; */
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 19px 38px -17px rgba(31, 47, 86, 0.21);
+  -moz-box-shadow: 0px 19px 38px -17px rgba(31, 47, 86, 0.21);
+  box-shadow: 0px 19px 38px -17px rgba(31, 47, 86, 0.21);
+
+  z-index: 2;
+}
+
+.illustration {
+  height: 28%;
+  /* background-color: bisque; */
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.illustration img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+p {
+  /* opacity: 50%; */
+  font-size: 15px;
+  color: #7280a7;
+  text-align: center;
+  line-height: 1.6;
+  width: 80%;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+.order-container {
+  /* border: 2px dotted black; */
+  height: 64%;
+  width: 85%;
+
+  margin: 1.6em;
+  padding: 20px 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid orange; */
+  margin-left: 1em;
+}
+
+.price-details {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid orange; */
+}
+
+.plan-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f5f7ff;
+  /* border: 2px solid yellowgreen; */
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.plan-cont a {
+  color: #3829e0;
+  font-size: 0.8em;
+  font-weight: 900;
+}
+
+button:hover, .plan-cont a:hover {
+    cursor: pointer;
+    opacity: 50%;
+    transition: opacity 200ms linear;
+}
+
+#cancel-button:hover{
+    opacity: 100%;
+}
+
+
+.price p {
+  color: #7280a7;
+  font-size: 14px;
+  opacity: 100%;
+}
+
+.price h4 {
+  color: #1f2f56;
+  font-size: 0.9em;
+  font-weight: 900;
+  margin-bottom: 0.3em;
+}
+
+button {
+  display: block;
+  width: 100%;
+  height: 15%;
+  max-height: 50px;
+  font-weight: 900;
+  font-family: "Red Hat Display";
+  font-size: 15px;
+}
+
+#payment-button {
+  background-color: #3829e0;
+  color: white;
+  border: none;
+  border-radius: 0.8em;
+  -webkit-box-shadow: 0px 10px 30px 1px rgba(56, 41, 224, 0.41);
+  -moz-box-shadow: 0px 10px 30px 1px rgba(56, 41, 224, 0.41);
+  box-shadow: 0px 10px 30px 1px rgba(56, 41, 224, 0.41);
+}
+
+#cancel-button {
+  background: transparent;
+  color: #1f2f56;
+  border: none;
+  opacity: 50%;
+}
+
+@media (min-width: 375px) {
+  .order-card {
+    max-width: 440px;
+    max-height: 700px;
+    min-width: 338px;
+    min-height: 560px;
+  }
+}
+
+@media (min-width: 1440px) {
+    #main-image{
+        width: 100%;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
